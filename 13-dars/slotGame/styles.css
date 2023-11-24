@@ -1,0 +1,33 @@
+.machine {
+  width: 500px;
+  background: green;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+.screen {
+  width: 400px;
+  border: 10px solid yellow;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  background: black;
+}
+.item {
+  font-size: 50px;
+  background: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+}
+.play-btn {
+  margin: 20px auto;
+  width: 250px;
+  padding: 15px;
+  font-size: 36px;
+  font-family: cursive;
+  text-transform: uppercase;
+  background: repeating-linear-gradient(to bottom right, red, yellow 20px);
+}

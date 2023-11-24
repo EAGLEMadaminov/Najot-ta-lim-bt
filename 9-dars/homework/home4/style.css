@@ -1,0 +1,64 @@
+.head-info {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0px auto;
+}
+.chnase-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  width: 900px;
+  justify-content: center;
+}
+.letters button {
+  list-style-type: none;
+  margin: 10px 20px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+.gues-words {
+  width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+.gues-letter {
+  width: 20px;
+  height: 20px;
+  border-color: grey;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 20px 30px;
+  outline: none;
+}
+input {
+  text-transform: uppercase;
+}
+.clicked {
+  background: green;
+  color: white;
+}
+.description {
+  margin: 0px auto;
+  text-align: center;
+  font-size: 18px;
+}
+.checked-word {
+  background-color: green;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  top: 30px;
+  right: 20px;
+}
+.checked-word p {
+  margin: 0px;
+}

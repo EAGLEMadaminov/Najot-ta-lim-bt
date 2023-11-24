@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="half">
+      <div class="pizza">
+        <div class="bread"></div>
+        <div class="tomatoes">
+          <div class="tomato tomato-1"></div>
+          <div class="tomato tomato-2"></div>
+          <div class="tomato tomato-3"></div>
+          <div class="tomato tomato-4"></div>
+        </div>
+        <div class="onions">
+          <div class="onion onion-1"></div>
+          <div class="onion onion-2"></div>
+          <div class="onion onion-3"></div>
+          <div class="onion onion-4"></div>
+        </div>
+        <div class="sousages">
+          <div class="sousage sousage-1">🥓</div>
+          <div class="sousage sousage-2">🥓</div>
+          <div class="sousage sousage-3">🥓</div>
+          <div class="sousage sousage-4">🥓</div>
+        </div>
+        <div class="pineapples">
+          <div class="pineapple pineapple-1">🍍</div>
+          <div class="pineapple pineapple-2">🍍</div>
+          <div class="pineapple pineapple-3">🍍</div>
+        </div>
+        <div class="cheeses">
+          <div class="cheese cheese-1"></div>
+          <div class="cheese cheese-2"></div>
+          <div class="cheese cheese-3"></div>
+          <div class="cheese cheese-4"></div>
+        </div>
+        <div class="qazis">
+          <div class="qazi">🥩</div>
+        </div>
+        <div class="souce"></div>
+        <div class="olive"></div>
+        <div class="kechup"></div>
+        <div class="mayo"></div>
+      </div>
+    </div>
+
+    <div class="half">
+      <h1>Build your own pizza</h1>
+      <ul class="toppings">
+        <li>Bread - $2</li>
+        <li class="topping" data-price="1" data-target=".tomatoes">
+          Tomatoes - $1 <input type="checkbox" />
+        </li>
+        <li class="topping" data-price="1" data-target=".onions">
+          Onions - $1 <input type="checkbox" />
+        </li>
+        <li class="topping" data-price="1" data-target=".sousages">
+          Sousages - $1 <input type="checkbox" />
+        </li>
+        <li class="topping" data-price="4" data-target=".cheeses">
+          Cheeses - $4 <input type="checkbox" />
+        </li>
+        <li class="topping" data-price="6" data-target=".pineapple">
+          Pineapple - $6 <input type="checkbox" />
+        </li>
+        <li class="topping" data-price="5" data-target=".qazi">
+          Qazi - $5 <input type="checkbox" />
+        </li>
+      </ul>
+      <h3>Total: $<span class="total">2</span></h3>
+      <button class="btn">Buyurtma berish</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+.effect {
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+  border-radius: 50%;
+  animation: buble 1s ease-in-out 0s 1;
+  transform: translate(-50%, -50%) scale(0);
+  position: fixed;
+}
+
+@keyframes buble {
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+  }
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}

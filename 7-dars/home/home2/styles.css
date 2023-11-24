@@ -1,0 +1,37 @@
+.time-base {
+  display: flex;
+  align-items: center;
+}
+.dote {
+  padding-bottom: 10px;
+  line-height: 40px;
+  font-size: 45px;
+}
+.clock-box {
+  width: 400px;
+  height: 120px;
+  background-color: black;
+  color: #03fc22;
+  display: flex;
+  border: 4px solid grey;
+  margin: 100px auto;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.day {
+  margin-top: 30px;
+  font-size: 16px;
+}
+h1 {
+  font-size: 60px;
+}
+.time-letter {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+small {
+  font-size: 20px;
+}

@@ -1,0 +1,12 @@
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.text {
+  font-size: 12px;
+  line-height: 200px;
+}

@@ -1,0 +1,32 @@
+.box {
+  margin: 100px auto;
+  width: 100wv;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.show {
+  background-image: url("./photo1.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.show1 {
+  background-image: url("./photo2.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+button {
+  width: 100px;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  letter-spacing: 5px;
+}

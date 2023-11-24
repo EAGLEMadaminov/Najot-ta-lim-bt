@@ -1,0 +1,35 @@
+.dark {
+  background: #000;
+  color: white;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-child {
+  display: flex;
+}
+.small h1 {
+  font-size: 16px;
+}
+.small p,
+option {
+  font-size: 12px;
+}
+
+.medium h1 {
+  font-size: 20px;
+}
+.medium p,
+option {
+  font-size: 16px;
+}
+
+.large h1 {
+  font-size: 24px;
+}
+.large p,
+option {
+  font-size: 10px;
+}

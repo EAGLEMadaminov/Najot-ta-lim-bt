@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.show-elements {
+  display: flex;
+  width: 1200px;
+  margin: 30px auto;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.show-elements div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.show-elements div ol li {
+  margin: 20px 0px;
+  font-size: 18px;
+}

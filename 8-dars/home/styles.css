@@ -1,0 +1,9 @@
+.list-item {
+  list-style-type: none;
+  margin: 15px 0px;
+  font-size: 24px;
+}
+.list-link {
+  color: blue;
+  text-decoration: none;
+}

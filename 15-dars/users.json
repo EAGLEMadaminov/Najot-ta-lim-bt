@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "fName": "Eshmatjon",
+    "lName": "Toshmatjonov",
+    "age": 32,
+    "isMarried": true,
+    "skills": ["HTML", "CSS", "JS", "JSON"]
+  },
+  {
+    "id": 2,
+    "fName": "John",
+    "lName": "Doe",
+    "age": 70,
+    "isMarried": false,
+    "skills": ["HTML", "CSS", "JS", "JSON", "BS", "SASS"]
+  }
+]

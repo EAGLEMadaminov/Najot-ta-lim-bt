@@ -1,0 +1,28 @@
+.around {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  color: white;
+  background: blue;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-data {
+  color: white;
+  margin: 0px;
+}
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.red {
+  background-color: red;
+}

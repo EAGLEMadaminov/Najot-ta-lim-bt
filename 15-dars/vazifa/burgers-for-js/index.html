@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/minified/style.min.css" />
+    <title>Burger JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <a href="./history/index.html">Do you want to see your history?</a>
+      </h1>
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-md-6">
+          <div class="burger">
+            <img
+              class="bread bottom"
+              src="./burger-layers/bottom-bread.svg"
+              alt=""
+            />
+            <img class="bread top" src="./burger-layers/top-bread.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6 border border-1 border-danger">
+          <select class="my-3 py-1 w-25 lang">
+            <option value="uz">uz</option>
+            <option value="ru">ru</option>
+            <option value="en">en</option>
+          </select>
+          <button type="button" id="btn-changer" class="btn btn-light">
+            Light
+          </button>
+          <ul class="ingredients list-group">
+            <li class="list-group-item">Bread- <span>$2</span></li>
+            <li class="list-group-item">Cheese - $2</li>
+            <li class="list-group-item">Meat - $5</li>
+            <li class="list-group-item">Onion - $1</li>
+            <li class="list-group-item">Tomato - $1</li>
+            <li class="list-group-item">Pickle - $1</li>
+            <li class="list-group-item">Salad - $1</li>
+          </ul>
+          <div
+            class="layer-btns my-5 d-flex justify-content-between border border-1 border-danger"
+          >
+            <button class="btn btn-primary" data-layer="cheese">Cheese</button>
+            <button class="btn btn-primary" data-layer="meat">Meat</button>
+            <button class="btn btn-primary" data-layer="onion">Onion</button>
+            <button class="btn btn-primary" data-layer="tomato">Tomato</button>
+            <button class="btn btn-primary" data-layer="pickle">Pickle</button>
+            <button class="btn btn-primary" data-layer="salad">Salad</button>
+          </div>
+          <div class="text-bg-light p-5 border border-dark rounded-3">
+            <h3>
+              <span class="total-text">Total: $</span>
+              <span class="total">2</span>
+            </h3>
+
+            <button class="btn btn-success order-btn">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <h2><a href=""></a></h2>
+    </div>
+    <script src="js/burger.js"></script>
+  </body>
+</html>
