@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fName": "Eshmat",
+      "lastName": "Toshmatov",
+      "image": "image 1",
+      "age": 32,
+      "email": "gmail.com",
+      "password": 123456
+    },
+    {
+      "id": 2,
+      "fName": "Bek",
+      "lastName": "Bekxo'jayev",
+      "image": "image 1",
+      "age": 48,
+      "email": "gmail.com",
+      "password": 123456
+    },
+    {
+      "id": 3,
+      "fName": "Ali",
+      "lastName": "Alixonov",
+      "image": "image 1",
+      "age": 12,
+      "email": "gmail.com",
+      "password": 123456
+    },
+    {
+      "id": 4,
+      "fName": "Usmon",
+      "lastName": "Bo'riyev",
+      "image": "image 1",
+      "age": 22,
+      "email": "gmail.com",
+      "password": 123456
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "IPhone 15",
+      "price": "15k$",
+      "description": "Toshmat post",
+      "image": "image",
+      "company": "Apple"
+    },
+    {
+      "id": 2,
+      "name": "Samsung ",
+      "price": "5k$",
+      "description": "Toshmat post",
+      "image": "image",
+      "company": "Samsung"
+    },
+    {
+      "id": 3,
+      "name": "Red MI",
+      "price": "3k$",
+      "description": "12gb  13/12MP ",
+      "image": "image",
+      "company": "Red MI"
+    },
+    {
+      "id": 4,
+      "name": "Samsung 51",
+      "price": "8k$",
+      "description": "256GB 15/13MP",
+      "image": "image",
+      "company": "Samsung"
+    },
+    {
+      "id": 5,
+      "name": "LG",
+      "price": "5k$",
+      "description": "Q70 128GB 12/13MP",
+      "image": "image",
+      "company": "LG"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "date": "",
+      "clientName": "Shox",
+      "totalPrise": "5$",
+      "status": {
+        "text": "created"
+      }
+    },
+    {
+      "id": 2,
+      "date": "24.10.2023",
+      "clientName": "Shox",
+      "totalPrise": "7$",
+      "status": {
+        "text": "created"
+      }
+    },
+    {
+      "id": 3,
+      "date": "23.10.2023",
+      "clientName": "Shox",
+      "totalPrise": "6$",
+      "status": {
+        "text": "created"
+      }
+    }
+  ]
+}
