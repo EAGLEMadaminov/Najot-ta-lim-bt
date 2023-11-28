@@ -150,6 +150,13 @@ let showOrders = async () => {
   createBtn.textContent = "Create new ";
   createBtn.classList.add("btn", "btn-primary");
   elShowUserDiv.append(createBtn);
+
+  createBtn.addEventListener("click", () => {
+    console.log("ok");
+    createBtn.setAttribute("data-bs-toggle", "modal");
+    createBtn.setAttribute("data-bs-target", "#orderModal");
+    createBtn.setAttribute("type", "button");
+  });
 };
 let Show;
 let userCount1 = 0;
