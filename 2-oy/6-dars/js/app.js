@@ -42,3 +42,12 @@ if (id) {
       });
     });
 }
+
+// const changeArray = (array, number) => {
+//   for (let i = 1; i <= number; i++) {
+//     let item = array.pop();
+//     array.unshift(item); 
+//   }
+//   return array;
+// };
+// console.log(changeArray([2, 3, 4, 5], 1));

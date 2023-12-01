@@ -71,7 +71,16 @@
         </ul>
       </aside>
       <div class="">
-        <button class="create-btn btn btn-info">Create</button>
+        <div class="d-flex my-3 justify-content-between align-items-center">
+          <h1 class="text-white">Orders</h1>
+          <button
+            class="create-btn btn btn-info"
+            data-bs-toggle="modal"
+            data-bs-target="#orderCreateModal"
+          >
+            Create
+          </button>
+        </div>
         <table class="table table-striped table-dark table-responsive w-100">
           <thead>
             <tr class="text-center">
@@ -88,8 +97,113 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <!-- Create Order Modal  -->
+    <div class="modal fade" id="orderCreateModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Order</h5>
+            <button
+              type="button"
+              class="btn-close text-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="create-order-form">
+              <div class="mb-3">
+                <label for="client-name" class="col-form-label"
+                  >Client Name:</label
+                >
+                <select>
+                  <option value="" selected></option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="total-price" class="col-form-label"
+                  >Total Price:</label
+                >
+                <input type="number" class="form-control" id="total-price" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary crete-order-btn">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Edit Order Modal  -->
+    <div class="modal fade" id="editOrderModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Order</h5>
+            <button
+              type="button"
+              class="btn-close text-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="edit-order-form">
+              <div class="mb-3">
+                <label for="client-edit-name" class="col-form-label"
+                  >Client Name:</label
+                >
+                <input type="text" class="form-control" id="client-edit-name" />
+              </div>
+              <div class="mb-3">
+                <label for="total-edit-price" class="col-form-label"
+                  >Total Price:</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="total-edit-price"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="status" class="col-form-label">Status:</label>
+                <select>
+                  <option value="Created">Created</option>
+                  <option value="InCar">InCar</option>
+                  <option value="Packing">Packing</option>
+                  <option value="Delivered">Delivered</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary edit-order-btn">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="../js/orders.js"></script>
   </body>
 </html>
