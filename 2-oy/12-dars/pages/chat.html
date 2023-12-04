@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      let userId = localStorage.getItem("user-id");
+      if (userId) window.location.replace("/");
+    </script>
+    <title>Telegram | Register</title>
+  </head>
+  <body class="bg-gray-500">
+    <header class="bg-blue-600 flex items-center justify-between">
+      <div></div>
+      <button class="bg-rose-200 border border-rose-900 text-rose-900">
+        Log out
+      </button>
+    </header>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
+</html>

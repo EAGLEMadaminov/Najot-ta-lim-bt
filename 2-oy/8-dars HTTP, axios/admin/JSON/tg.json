@@ -1,4 +1,45 @@
 {
-  "users": [],
-  "chats": []
+  "users": [
+    {
+      "fullName": "Ali Umarov",
+      "phone": "+998901234567",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "fullName": "Eshmat Toshmatov",
+      "phone": "+998911234567",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "fullName": "Bek Soatov",
+      "phone": "+998931234568",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "fullName": "Shoh Ro'ziyev",
+      "phone": "+998971234567",
+      "password": "1234",
+      "id": 4
+    }
+  ],
+  "chats": [
+    {
+      "id": 1,
+      "members": [1, 2],
+      "messages": []
+    },
+    {
+      "id": 2,
+      "members": [3, 4],
+      "messages": []
+    },
+    {
+      "id": 3,
+      "members": [1, 2],
+      "messages": []
+    },
+  ]
 }

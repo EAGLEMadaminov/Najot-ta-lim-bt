@@ -3,22 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="js/login.js"></script>
     <title>Telegram |Login</title>
   </head>
   <body class="h-screen grid place-items-center bg-gray-500">
-    <div class="alerts fixed top-4 end-4">
-      <div
-        class="bg-rose-200 rounded-lg border border-rose-700 text-rose-700 ps-8 pe-4 py-2 text-xl"
-      >
-        All fields are required!
-        <button class="ms-4">X</button>
-      </div>
-    </div>
+    <div class="alerts fixed top-4 end-4 grid gap-2"></div>
     <div class="w-[500px] bg-gray-300 p-8 rounded-lg">
       <h1 class="text-4xl text-blue-600 text-center">Login</h1>
 
-      <form action="my-8">
+      <form class="my-8">
         <label for="phone" class="block my-6">
           Your Phone Number:
           <input type="tel" id="phone" class="px-4 py-2 w-full mt-2" />
@@ -37,5 +29,7 @@
       </form>
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/login.js"></script>
   </body>
 </html>

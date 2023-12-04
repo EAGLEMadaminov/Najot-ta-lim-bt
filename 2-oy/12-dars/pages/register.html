@@ -3,9 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://cdn.tailwindcss.com"></script>
-    <script defer src="js/register.js"></script>
+    <script>
+      let userId = localStorage.getItem("user-id");
+      if (userId) window.location.replace("/");
+    </script>
     <title>Telegram | Register</title>
   </head>
-  <body></body>
+  <body class="h-screen grid place-items-center bg-gray-500">
+    <div class="alerts fixed top-4 end-4 grid gap-2"></div>
+    <div class="w-[500px] bg-gray-300 p-8 rounded-lg">
+      <h1 class="text-4xl text-blue-600 text-center">Register</h1>
+
+      <form class="my-8">
+        <label for="full-name" class="block my-6">
+          Your Full Name:
+          <input type="text" id="full-name" class="px-4 py-2 w-full mt-2" />
+        </label>
+
+        <label for="phone" class="block my-6">
+          Your Phone Number:
+          <input type="tel" id="phone" class="px-4 py-2 w-full mt-2" />
+        </label>
+
+        <label for="password" class="block my-6">
+          Your Password:
+          <input type="password" id="password" class="px-4 py-2 w-full mt-2" />
+        </label>
+
+        <label for="confirm-password" class="block my-6">
+          Confirm your Password:
+          <input
+            type="password"
+            id="confirm-password"
+            class="px-4 py-2 w-full mt-2"
+          />
+        </label>
+        <button type="submit" class="bg-blue-600 w-full py-2 text-white">
+          Sign up
+        </button>
+        <p class="my-2 text-center">
+          Already created an account
+          <a href="/pages/login.html" class="text-blue-600">Log in</a>
+        </p>
+      </form>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
 </html>
