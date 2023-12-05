@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Category</title>
+  </head>
+  <body class="flex h-screen place-items-center">
+    <div class="w-[500px] mx-auto bg-gray-300 p-8 rounded-lg">
+      <h1 class="text-4xl text-blue-600 text-center">Category Create</h1>
+
+      <form class="my-8">
+        <label for="name-uz" class="block my-6">
+          Name uz:
+          <input type="text" id="name-ru" class="px-4 py-2 w-full mt-2" />
+        </label>
+        <label for="name-ru" class="block my-6">
+          Name ru:
+          <input type="text" id="password" class="px-4 py-2 w-full mt-2" />
+        </label>
+        <label for="image" class="block my-6">
+          Image:
+          <input type="url" id="image" class="px-4 py-2 w-full mt-2" />
+        </label>
+        <button type="submit" class="bg-blue-600 w-full py-2 text-white">
+          Save
+        </button>
+
+        <p class="mt-2 error-message text-rose-600 text-center"></p>
+      </form>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/form/category.js"></script>
+  </body>
+</html>

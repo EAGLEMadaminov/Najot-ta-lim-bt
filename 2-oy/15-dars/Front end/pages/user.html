@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram |Login</title>
+  </head>
+  <body class="h-screen grid place-items-center bg-gray-500">
+    <div class="container mx-auto">
+      <h1 class="text-center">Create user</h1>
+      <form class="my-8">
+        <label for="name" class="block my-6">
+          Your Name:
+          <input type="text" id="name" class="px-4 py-2 w-full mt-2" />
+        </label>
+        <label for="phone" class="block my-6">
+          Your Phone Number:
+          <input type="tel" id="phone" class="px-4 py-2 w-full mt-2" />
+        </label>
+        <label for="password" class="block my-6">
+          Your Password:
+          <input type="password" id="password" class="px-4 py-2 w-full mt-2" />
+        </label>
+        <button type="submit" class="bg-blue-600 w-full py-2 text-white">
+          Sign in
+        </button>
+        <p class="my-2 text-center">
+          No account yet?
+          <a href="/pages/register.html" class="text-blue-600">Register now</a>
+        </p>
+        <p class="error-message text-rose-600 text-center"></p>
+      </form>
+    </div>
+    <div class="container mx-auto">
+      <div class="users flex justify-between flex-wrap"></div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/user.js"></script>
+  </body>
+</html>

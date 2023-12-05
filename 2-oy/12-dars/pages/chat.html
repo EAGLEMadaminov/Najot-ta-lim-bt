@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      let userId = localStorage.getItem("user-id");
-      if (userId) window.location.replace("/");
-    </script>
-    <title>Telegram | Register</title>
+
+    <title>Telegram | Chat list</title>
   </head>
   <body class="bg-gray-500">
-    <header class="bg-blue-600 flex items-center justify-between">
-      <div></div>
-      <button class="bg-rose-200 border border-rose-900 text-rose-900">
-        Log out
-      </button>
+    <header class="bg-blue-600 text-white">
+      <div class="flex items-center justify-between py-2 container mx-auto">
+        <div class="flex items-center gap-2">
+          <div
+            class="w-16 h-16 bg-rose-200 rounded-full grid place-items-center text-rose-900 text-2xl"
+          >
+            E
+          </div>
+          <div>
+            <h2 id="fullName" class="text-xl">Eshmat Toshmatovs</h2>
+            <p id="phoneNumber">+998911234567</p>
+          </div>
+        </div>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search by Phone number or Full name"
+          class="py-2 px-4 rounded-lg w-1/2 text-black"
+        />
+        <button
+          id="logoutBtn"
+          class="bg-rose-200 border border-rose-900 text-rose-900 rounded-lg px-8 py-2"
+        >
+          Log out
+        </button>
+      </div>
     </header>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/js/register.js"></script>
+    <script src="/js/chat.js"></script>
   </body>
 </html>
