@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+  </head>
+  <body class="h-screen grid place-items-center bg-gray-500">
+    <div class="container mx-auto">
+      <div class="w-[500px] mx-auto bg-gray-300 p-8 rounded-lg">
+        <h1 class="text-4xl text-blue-600 text-center">Create Product</h1>
+
+        <form class="w-50 mx-auto">
+          <div class="flex justify-around gap-2">
+            <label for="name-uz" class="block my-6 mx-2">
+              Product name uz:
+              <input
+                type="text"
+                id="name-uz"
+                class="px-4 py-2"
+                placeholder="Enter product name uz"
+              />
+            </label>
+            <label for="name-ru" class="block my-6">
+              Product name ru:
+              <input
+                type="tel"
+                id="name-ru"
+                class="px-4 py-2"
+                placeholder="Enter product name ru"
+              />
+            </label>
+          </div>
+          <label for="price" class="block mb-6">
+            Price:
+            <input
+              type="text"
+              id="price"
+              class="px-4 py-2 w-full mt-2"
+              placeholder="Enter price"
+            />
+          </label>
+          <div class="flex gap-2">
+            <label for="color-uz" class="block my-6">
+              Color uz:
+              <input
+                type="text"
+                id="color-uz"
+                class="px-4 py-2 w-full mt-2"
+                placeholder="Enter color"
+              />
+            </label>
+            <label for="color-ru" class="block my-6">
+              Color ru:
+              <input
+                type="text"
+                id="color-ru"
+                class="px-4 py-2 w-full mt-2"
+                placeholder="Enter color"
+              />
+            </label>
+          </div>
+          <label for="Description-uz" class="block my-6">
+            Description uz:
+            <textarea
+              name="Description-uz"
+              id=""
+              cols="6"
+              class="px-4 py-2 w-full mt-2 rounded-md"
+              rows="2"
+              placeholder="Enter description"
+            ></textarea>
+          </label>
+          <label for="Description-ru" class="block my-6">
+            Description ru:
+            <textarea
+              name="Description-ru"
+              id=""
+              cols="6"
+              class="px-4 py-2 w-full mt-2 rounded-md"
+              rows="2"
+              placeholder="Enter description"
+            ></textarea>
+          </label>
+          <label for="image" class="block my-6">
+            Image:
+            <input
+              type="url"
+              id="image"
+              class="px-4 py-2 w-full mt-2"
+              placeholder="Enter product image url"
+            />
+          </label>
+          <label for="category">Category Name</label>
+          <select
+            class="product-select w-full px-4 py-2 w-full my-2"
+            id="category"
+          >
+            <option value="">choose category</option>
+          </select>
+          <button type="submit" class="bg-blue-600 w-full mt-4 py-2 text-white">
+            Save
+          </button>
+
+          <p class="error-message text-rose-600 text-center"></p>
+        </form>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <div class="products flex justify-between flex-wrap"></div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/form/products.js"></script>
+  </body>
+</html>

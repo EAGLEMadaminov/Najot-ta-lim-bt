@@ -5,35 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telegram |Login</title>
   </head>
-  <body class="h-screen grid place-items-center bg-gray-500">
-    <div class="container mx-auto">
-      <h1 class="text-center">Create user</h1>
-      <form class="my-8">
+  <body class="">
+    <div class="bg-gray-500 fixed h-screen w-[300px]">
+      <ul class="mx-6 text-white mt-10">
+        <li class="my-3">
+          <a href="../index.html" class="text-2xl flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-house-door mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+              />
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="my-3">
+          <button class="show-btn text-2xl flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-journals mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"
+              />
+              <path
+                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"
+              />
+            </svg>
+            Category
+          </button>
+          <ul class="category-ul hidden ml-3">
+            <li class="text-xl ml-6 my-3">
+              <a href="./form/category.html">Careate new </a>
+            </li>
+            <li class="text-xl ml-6 my-3">
+              <a href="./category.html">Show all </a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-3">
+          <button class="show-btn text-2xl flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-people-fill mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+              />
+            </svg>
+            Users
+          </button>
+          <ul class="hidden">
+            <li class="text-xl ml-6 my-3">
+              <a href="./form/user.html">Create new </a>
+            </li>
+            <li class="text-xl ml-6 my-3">
+              <a href="/">Show all </a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-3">
+          <button class="show-btn text-2xl flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-boxes mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"
+              />
+            </svg>
+            Products
+          </button>
+          <ul class="hidden">
+            <li class="text-xl ml-6 my-3">
+              <a href="./form/product.html">Create new </a>
+            </li>
+            <li class="text-xl ml-6 my-3">
+              <a href="./product.html">Show all </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <h1 class="text-4xl pt-4 text-black text-center">All Users</h1>
+    <div class="container pt-5">
+      <table class="ml-[350px] w-[1000px] text-xl text-center">
+        <thead>
+          <tr>
+            <th class="border p-2 w-25">User name</th>
+            <th class="border p-2 w-25">User phone</th>
+            <th class="border p-2 w-25">User role</th>
+            <th class="border p-2 w-25">N/</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div
+      class="show-modal fixed left-0 top-0 right-0 bottom-0 hidden bg-gray-600 flex place-items-center"
+    >
+      <form class="my-8 w-50 mx-auto">
+        <h1 class="text-center text-white text-4xl">Update user</h1>
         <label for="name" class="block my-6">
-          Your Name:
+          Update Name:
           <input type="text" id="name" class="px-4 py-2 w-full mt-2" />
         </label>
         <label for="phone" class="block my-6">
-          Your Phone Number:
+          Update Phone Number:
           <input type="tel" id="phone" class="px-4 py-2 w-full mt-2" />
         </label>
         <label for="password" class="block my-6">
-          Your Password:
+          Update Password:
           <input type="password" id="password" class="px-4 py-2 w-full mt-2" />
         </label>
         <button type="submit" class="bg-blue-600 w-full py-2 text-white">
-          Sign in
+          Save
         </button>
-        <p class="my-2 text-center">
-          No account yet?
-          <a href="/pages/register.html" class="text-blue-600">Register now</a>
-        </p>
-        <p class="error-message text-rose-600 text-center"></p>
+
+        <p class="error-message  mt-3 text-red-700 text-center"></p>
       </form>
     </div>
-    <div class="container mx-auto">
-      <div class="users flex justify-between flex-wrap"></div>
-    </div>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/js/user.js"></script>

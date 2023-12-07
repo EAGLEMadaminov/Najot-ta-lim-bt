@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Client</title>
   </head>
-  <body class="bg-gray-500">
-    <div class="w-full flex place-items-center">
-      <form class="my-8 w-50 mx-auto">
-        <h1 class="text-center text-white text-4xl">Create user</h1>
+  <body class="h-screen grid place-items-center bg-gray-500">
+    <div class="alerts fixed top-4 end-4 grid gap-2"></div>
+    <div class="w-[500px] bg-gray-300 p-8 rounded-lg">
+      <h1 class="text-4xl text-blue-600 text-center">Update</h1>
+
+      <form class="my-8">
         <label for="name" class="block my-6">
-          Your Name:
-          <input type="text" id="name" class="px-4 py-2 w-full mt-2" />
+          Name:
+          <input type="tel" id="name" class="px-4 py-2 w-full mt-2" />
         </label>
         <label for="phone" class="block my-6">
           Your Phone Number:
@@ -25,12 +27,11 @@
           Save
         </button>
 
-        <p class="error-message mt-3 text-rose-600 text-center"></p>
+        <p class="error-message text-rose-600 text-center"></p>
       </form>
     </div>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/js/form/users.js"></script>
+    <script src="/js/update.js"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose product</title>
+  </head>
+  <body>
+    <div class="show-modal h-screen grid place-items-center bg-gray-500">
+      <div class="w-[500px] bg-gray-300 p-8 rounded-lg">
+        <h1 class="text-4xl text-blue-600 text-center">Card</h1>
+
+        <form class="my-6">
+          <label for="product" class="block my-6"
+            >Choose product
+            <select id="product" class="select-product p-2 w-full mt-2">
+              <option value="">Choose product</option>
+            </select>
+          </label>
+          <label for="count" class="block my-6">
+            Count
+            <input
+              type="number"
+              class="w-full p-2 outline-none mt-2"
+              id="count"
+            />
+          </label>
+          <button
+            type="submit "
+            class="w-full text-white text-xl py-4 text-center bg-blue-500"
+          >
+            Choose
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/card.js"></script>
+  </body>
+</html>
