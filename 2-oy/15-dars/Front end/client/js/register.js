@@ -14,5 +14,5 @@ form.addEventListener("submit", async (e) => {
   };
 
   let res = await axios.post("/auth/register", client);
-  window.location.replace("/pages/login.html");
+  window.location.replace("/client/pages/login.html");
 });

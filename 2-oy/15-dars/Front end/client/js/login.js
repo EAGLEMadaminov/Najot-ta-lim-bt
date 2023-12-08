@@ -13,10 +13,12 @@ form.addEventListener("submit", async (e) => {
     password,
   };
 
+  console.log(client);
   let res = await axios.post("/auth/client-login", client);
   console.log();
-  localStorage.setItem("token", res.data.token);
+  localStorage.setItem("client-token", res.data.token);
   if (res.data.token) {
     window.location.replace("/");
   }
 });
+

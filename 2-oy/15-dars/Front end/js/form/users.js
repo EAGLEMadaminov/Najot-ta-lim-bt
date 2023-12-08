@@ -2,6 +2,7 @@ let form = document.querySelector("form");
 let p = document.querySelector(".error-message");
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
+let token = localStorage.getItem("admin-token");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -23,13 +24,12 @@ form.addEventListener("submit", async (e) => {
     password,
   };
   console.log(newUser);
-  let token = localStorage.getItem("token");
   let res = await axios.post("/users", newUser, {
     headers: {
       authorization: `Bearer ${token}`,
     },
   });
   if (res.data) {
-    window.location.replace("/");
+    window.location.replace("/admin.html");
   }
 });

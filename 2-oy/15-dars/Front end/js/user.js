@@ -12,7 +12,7 @@ showBtnAll.forEach((btn) => {
 });
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
-let token = localStorage.getItem("token");
+let token = localStorage.getItem("admin-token");
 
 let showModalFunc = (item) => {
   showModalDiv.classList.remove("hidden");
@@ -40,7 +40,7 @@ let showModalFunc = (item) => {
     };
     let res = await axios.put(`/users/${item._id}`, updateUser, {
       headers: {
-        authorization: `Barear ${token}`,
+        authorization: `Bearer ${token}`,
       },
     });
     tBody.innerHTML = "";
@@ -50,7 +50,6 @@ let showModalFunc = (item) => {
 };
 
 async function getAllUSers() {
-  let token = localStorage.getItem("token");
   let res = await axios.get("/users", {
     headers: {
       authorization: `Bearer ${token}`,

@@ -17,8 +17,8 @@ form.addEventListener("submit", async (e) => {
     password,
   };
   let res = await axios.post("/auth", auth);
-  localStorage.setItem("token", res.data.token);
+  localStorage.setItem("admin-token", res.data.token);
   if (res.data.token) {
-    window.location.replace("/");
+    window.location.replace("/admin.html");
   }
 });

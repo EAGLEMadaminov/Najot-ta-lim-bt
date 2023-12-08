@@ -1,14 +1,14 @@
 let form = document.querySelector("form");
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
-let token = localStorage.getItem("token");
+let token = localStorage.getItem("client-token");
 
 
 
 async function getClientInfo() {
   let { data } = await axios.get("/clients/me", {
     headers: {
-      authorization: `Barear ${token}`,
+      authorization: `Bearer ${token}`,
     },
   });
   form[0].value = data.name;
@@ -31,7 +31,7 @@ async function getClientInfo() {
     console.log(client);
     let res = await axios.put(`/clients/${data._id}`, client, {
       headers: {
-        authorization: `Barear ${token}`,
+        authorization: `Bearer ${token}`,
       },
     });
     window.location.replace("/");

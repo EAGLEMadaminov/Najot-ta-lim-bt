@@ -1,3 +1,4 @@
+console.log("ok");
 let usersDiv = document.querySelector(".categories");
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
 let showBtnAll = document.querySelectorAll(".show-btn");
@@ -8,7 +9,8 @@ let updateForm = document.querySelector(".update-form");
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
 
-let token = localStorage.getItem("token");
+let token = localStorage.getItem("admin-token");
+
 
 let showUpdateFunc = async (item) => {
   showModalDiv.classList.remove("hidden");
@@ -41,7 +43,6 @@ let showUpdateFunc = async (item) => {
 };
 
 async function getAllUSers() {
-  let token = localStorage.getItem("token");
   let res = await axios.get("/categories", {
     headers: {
       authorization: `Bearer ${token}`,

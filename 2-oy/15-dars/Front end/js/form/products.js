@@ -2,12 +2,12 @@ let productSelect = document.querySelector(".product-select");
 let form = document.querySelector("form");
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
-let token = localStorage.getItem("token");
+let token = localStorage.getItem("admin-token");
 
 (async function showSelectOption() {
   let { data } = await axios.get("/categories", {
     headers: {
-      authorization: `Barear ${token}`,
+      authorization: `Bearer ${token}`,
     },
   });
   console.log(data);
@@ -47,13 +47,12 @@ form.addEventListener("submit", async (e) => {
     image,
     category,
   };
-  console.log(newProduct);
   let res = await axios.post("/products", newProduct, {
     headers: {
-      authorization: `Barear ${token}`,
+      authorization: `Bearer ${token}`,
     },
   });
-  if(res.data){
-    window.location.replace("/")
+  if (res.data) {
+    window.location.replace("/admin.html");
   }
 });

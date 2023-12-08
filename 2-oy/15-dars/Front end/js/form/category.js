@@ -2,6 +2,7 @@ let form = document.querySelector("form");
 let p = document.querySelector(".error-message");
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
+let token = localStorage.getItem("admin-token");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -23,7 +24,6 @@ form.addEventListener("submit", async (e) => {
     ru,
     image,
   };
-  let token = localStorage.getItem("token");
   let res = await axios.post("/categories", newCategory, {
     headers: {
       authorization: `Bearer ${token}`,

@@ -11,7 +11,7 @@ showBtnAll.forEach((btn) => {
 });
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
-let token = localStorage.getItem("token");
+let token = localStorage.getItem("admin-token");
 
 let showModalFunc = async (item) => {
   console.log(item);
@@ -69,7 +69,7 @@ let showModalFunc = async (item) => {
 
     let { data } = await axios.put(`/products/${item._id}`, updateProduct, {
       headers: {
-        authorization: `Barear ${token}`,
+        authorization: `Bearer ${token}`,
       },
     });
     if (data) {

@@ -30,7 +30,7 @@ let productPrice = 0;
 
 let modalCardShoFunc = async (item) => {
   if (!token) {
-    window.location.replace("./pages/login.html");
+    window.location.replace("./client/pages/login.html");
     return;
   }
   productPrice += Number(item.price);
@@ -126,7 +126,6 @@ let showDataForClientFunc = (data) => {
 sendBtn.addEventListener("click", async () => {
   modalCardDiv.classList.add("hidden");
   cartCount.textContent = chooseProducts.length;
-  console.log(chooseProducts);
   let { data } = await axios.post("/clients/cart", chooseProducts, {
     headers: {
       authorization: `Bearer ${token}`,

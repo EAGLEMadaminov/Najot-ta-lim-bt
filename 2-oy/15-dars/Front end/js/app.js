@@ -1,7 +1,7 @@
 let categoryDiv = document.querySelector(".category");
 let showBtnAll = document.querySelectorAll(".show-btn");
 let countAll = document.querySelectorAll(".count");
-let token = localStorage.getItem("token");
+let token = localStorage.getItem("admin-token");
 (function checkToekn() {
   if (!token) return window.location.replace("/pages/login.html");
 })();
