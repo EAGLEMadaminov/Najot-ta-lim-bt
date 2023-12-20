@@ -9,6 +9,7 @@ async function showCard() {
       authorization: `Bearer ${token}`,
     },
   });
+  console.log(data.cart.length)
   data.cart.forEach(async (item) => {
     let { data: oneProduct } = await axios.get(`products/${item.product}`);
     let itemDiv = document.createElement("div");

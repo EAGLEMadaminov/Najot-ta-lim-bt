@@ -6,8 +6,93 @@
     <title>Products</title>
   </head>
   <body class="">
+    <div class="bg-gray-500 fixed h-screen w-[300px]">
+      <ul class="mx-6 text-white mt-10">
+        <li class="my-3">
+          <a href="/" class="text-2xl flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-house-door mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+              />
+            </svg>
+            All Products
+          </a>
+        </li>
+        <li class="my-3">
+          <button class="show-btn text-2xl flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-journals mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"
+              />
+              <path
+                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"
+              />
+            </svg>
+            Category
+          </button>
+          <ul class="category-list ml-10 mt-3 text-xl hidden"></ul>
+        </li>
+        <li class="my-3 hidden show-card">
+          <a
+            href="./client/pages/card.html"
+            class="show-btn text-2xl flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-boxes mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"
+              />
+            </svg>
+            My card
+          </a>
+        </li>
+        <li class="my-3 show-update hidden">
+          <a
+            href="./client/pages/update.html"
+            class="show-btn text-2xl flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-journals mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"
+              />
+              <path
+                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"
+              />
+            </svg>
+            Update
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="container mx-auto pt-5">
-      <div class="text-center flex justify-around items-center my-5">
+      <div class="text-center ml-[320px] flex justify-around items-center my-5">
         <h2 class="text-2xl flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +115,7 @@
           class="p-2 px-4 bg-blue-600 text-white text-xl rounded-lg"
           >Go to register</a
         >
+
         <a href="/client/pages/card.html" class="flex items-center">
           <span class="cart-count">Count</span>
           <svg
@@ -49,7 +135,7 @@
           </svg>
         </a>
       </div>
-      <form class="search-form text-2xl flex flex-col text-center">
+      <form class="ml-[320px] search-form text-2xl flex flex-col text-center">
         <label for="search" class="mb-2"> Search product by name </label>
         <div class="flex w-full justify-around gap-2">
           <input
@@ -66,8 +152,22 @@
           </button>
         </div>
       </form>
+      <div class="ml-[320px] flex justify-around">
+        <button
+          class="mt-5 sort-btn-min p-2 px-4 bg-blue-600 text-white text-xl rounded-lg"
+        >
+          Sort by min cost
+        </button>
+        <button
+          class="mt-5 sort-btn-max p-2 px-4 bg-blue-600 text-white text-xl rounded-lg"
+        >
+          Sort by max cost
+        </button>
+      </div>
       <h1 class="text-center text-3xl my-3 mb-4">All Products</h1>
-      <div class="flex justify-around mx-auto show-product flex-wrap"></div>
+      <div
+        class="ml-[320px] flex justify-around mx-auto show-product flex-wrap"
+      ></div>
     </div>
     <div
       class="modal-card text-black bg-white border shadow-lg shadow-indigo-500/40 hidden w-[400px] top-0 fixed right-0 h-screen"

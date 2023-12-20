@@ -1,6 +1,7 @@
 let form = document.querySelector("form");
 let p = document.querySelector(".error-message");
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
+
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   let phone = form[0].value;
@@ -20,5 +21,7 @@ form.addEventListener("submit", async (e) => {
   localStorage.setItem("admin-token", res.data.token);
   if (res.data.token) {
     window.location.replace("/admin.html");
+  } else {
+    p.textContent = "Something wrong check again!";
   }
 });

@@ -7,12 +7,42 @@ let userName = document.querySelector(".user-name");
 let cartCount = document.querySelector(".cart-count");
 let closeModalBtn = document.querySelector(".close-modal");
 let totalPrice = document.querySelector(".total-price");
+let sortCostByMinBtn = document.querySelector(".sort-btn-min");
+let sortCostByMaxBtn = document.querySelector(".sort-btn-max");
+let elShowBtn = document.querySelector(".show-btn");
+let elCategoryList = document.querySelector(".category-list");
+let showUpdate = document.querySelector(".show-update");
+let shoCart = document.querySelector(".show-card");
 
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
 let token = localStorage.getItem("client-token");
 
+if (token) {
+  showUpdate.classList.remove("hidden");
+  shoCart.classList.remove("hidden");
+}
+
 closeModalBtn.addEventListener("click", () => {
   modalCardDiv.classList.add("hidden");
+});
+
+const ShowProductsByCategoryFunc = async (item) => {
+  let { data: products } = await axios.get(`/products/category/${item._id}`);
+  showDataForClientFunc(products);
+};
+
+elShowBtn.addEventListener("click", async () => {
+  elCategoryList.classList.toggle("hidden");
+  let { data } = await axios.get("/categories");
+  data.forEach((item) => {
+    let li = document.createElement("li");
+    li.classList.add("my-3");
+    let button = document.createElement("button");
+    button.textContent = item.uz;
+    li.append(button);
+    elCategoryList.append(li);
+    button.addEventListener("click", () => ShowProductsByCategoryFunc(item));
+  });
 });
 
 let chooseProducts = [];
@@ -97,6 +127,14 @@ let modalCardShoFunc = async (item) => {
 
 let showDataForClientFunc = (data) => {
   showProductDiv.innerHTML = "";
+  sortCostByMinBtn.addEventListener("click", () => {
+    data = data.sort((a, b) => a.price - b.price);
+    showDataForClientFunc(data);
+  });
+  sortCostByMaxBtn.addEventListener("click", () => {
+    data = data.sort((a, b) => b.price - a.price);
+    showDataForClientFunc(data);
+  });
   data.forEach((item) => {
     let itemDiv = document.createElement("div");
     itemDiv.className =
