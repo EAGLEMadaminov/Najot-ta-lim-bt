@@ -1,10 +1,12 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 class NavLinks extends Component {
   render() {
     return (
       <li>
-        <span>{">"}</span> <a href={this.props.link}>{this.props.children}</a>
+        <span>{">"}</span>{" "}
+        <Link to={this.props.link}>{this.props.children}</Link>
       </li>
     );
   }
