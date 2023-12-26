@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .maxsus-span {
+    @apply text-9xl inline-block bg-lyuboy-500 hover:bg-pink-600 focus:bg-pink-800 text-yellow-800 hover:text-yellow-600;
+  }
+}
